@@ -3,7 +3,7 @@
 #-------------------------------------------------------------------------------
 #Synth´s setteable atributes(parameters):
 #Needed:
-#-coords((x,y) tuple) 
+#-coords((x,y) tuple)
 #Optional:
 #-lineal_speed(default 8): speed of movement
 #-rotation_speed(default 8): speed of rotation
