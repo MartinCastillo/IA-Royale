@@ -15,7 +15,7 @@
 <h1>Parameters<h1>
   
 Needed:<br>
-* coords((x,y) tuple).
+* coords((x,y) tuple).<br>
 Optional:<br>
 * lineal_speed(default 8): speed of movement.
 * rotation_speed(default 8): speed of rotation.
