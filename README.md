@@ -2,7 +2,7 @@
 Consiste en una simulación personalizable de un battle royale, con todo lo necesario para entrenar a los "jugadores" con algoritmos de machine learning para sobrevivir lo más posible.
 La idea principal es que se pueden crear jugadores a gusto en el mapa (que todavia no es facilmente personalizable, como para por ejemplo poner obstaculos, pero está en proceso), estos jugadores pueden moverse, ver y disparar según lo vean conveniente, el mapa se puede programar para encogerse a medida que transcurre el tiempo de juego.
 Es posible programar comportamientos de estos jugadores frente a situaciones, o entrenarlo por medio de algoritmos (Que es el foco).<br>
-La meta es entrenar a los individuos para que sean progresivamente más habiles. Y explorar algoritmos en estos jugadores para ver cuál les favorece más.
+La meta es entrenar a los individuos para que sean progresivamente más habiles. Y explorar algoritmos en estos jugadores para ver cuales les favorecen más.
 
 
 <h1>Archivos y funcionamiento</h1>
