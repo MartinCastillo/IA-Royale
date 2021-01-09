@@ -1,18 +1,18 @@
-<h1>Resumen<h1>
+<h1>Resumen</h1>
 
-<h1>Archivos y funcionamiento<h1>
+<h1>Archivos y funcionamiento</h1>
   
-* ```/main.py```: Archivo principal que corre.<br>
-    * ```evaluate_synth```: Función que evalua en cada ciclo según 
-* ```/Game```: <br>
-    * ```/Game.py```: <br>
-* ```/Synth```: <br>
-    * ```/Synth.py```: <br>
-* ```/genetic_model```: <br>
-   * ```/genetic_model.py```: <br>
-* ```/data.csv```: Donde se almacenan los datos del juego para futuros analisis y predicciones.<br>
+* ```main.py```: Archivo principal que corre y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths<br>
+    * ```evaluate_synth```: Función que evalua en cada ciclo, para cada individuo, según los parametros entregados, que son principalmente el rango de visión del individuo y posición, las acciones arealizar, que se incluyen más abajo en ```Main synth's methods```. 
+* ```Game```<br>
+    * ```/Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración<br>
+* ```Synth```<br>
+    * ```Synth.py```: Clase que representa a los individuos participantes en la simulación.<br>
+* ```genetic_model```<br>
+   * ```genetic_model.py```: Archivo que contiene funciones utilizables para el modelo genético de ejemplo.<br>
+* ```data.csv```: Donde se almacenan los datos del juego para futuros analisis y predicciones.<br>
 
-<h1>Parameters<h1>
+<h1>Parameters</h1>
   
 Needed:<br>
   * coords((x,y) tuple).
@@ -43,7 +43,7 @@ Main synth´s methods:
   * set_controllable(bool): sets the controllable atribute.
   * restore_stats(), restore health and ammo to its starting points.
 
-<h1>Capturas<h1>
+<h1>Capturas</h1>
   
   ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/1.PNG)
   ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/2.PNG)
