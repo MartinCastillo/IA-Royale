@@ -20,9 +20,9 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
 <h1>Synth</h1>
 Synth es el nombre que se le da a los individuos en la simulación y que tienen un comportamiento programable para hacer lo que sea en su contexto (Por ejemplo seguir a otros synths, disparar a un synth a cierta distancia al detectarlo o evitar a cualquier individuo al detectarlo). Todos cuentan con cualidades como vida, que al agotarse mueren o munición.<br>
 <h2>Sistema de detección</h2>
-También tienen un sistema de detección basado en rangos. Si un synth está en alguno de los rangos, se actualiza la lista que contiene las distancias de los synths (obtenible con get_senseDataBuffer() ), Esta lista tiene elementos que representan distancias y tiene tantos elementos como quepan según el ángulo de detección que tenga, cuanto mayor sea el ángulo más parametros tendrá la matriz de detección, que luego se puede utilizar para tomar desiciones.<br>
+También tienen un sistema de detección basado en rangos. Si un synth está en alguno de los rangos, se actualiza la lista que contiene las distancias de los synths (obtenible con get_senseDataBuffer() ), Esta lista tiene elementos que representan distancias y tiene tantos elementos como quepan según el ángulo de detección que tenga, cuanto mayor sea el ángulo más parametros tendrá la matriz de detección, que luego se puede utilizar para tomar desiciones.<br><br>
 
-![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)
+![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)<br><br>
 ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/6.PNG)
 
 <h2>Parametros y atributos de la clase Synth (Todos accedibles desde la función evaluadora)</h2>
