@@ -13,7 +13,7 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
     * ```Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración. Entre los parametros más importantes se incluyen la lista de individuos y la función de evaluación que evalua el comportamiento en cada ciclo.<br>
       * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos con sus puntajes correspondientes.
 * ```Synth```<br>
-    * ```Synth.py```: Clase que representa a los individuos participantes en la simulación.<br>
+    * ```Synth.py```: Clase que representa a los individuos participantes en la simulación, con sus acciones y parametros.<br>
 * ```genetic_model```<br>
    * ```genetic_model.py```: Archivo que contiene funciones utilizables para el modelo genético de ejemplo.<br>
 * ```data.csv```: Donde se almacenan los datos del juego para futuros analisis y predicciones.<br>
