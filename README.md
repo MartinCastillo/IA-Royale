@@ -40,8 +40,7 @@ Optional:<br>
   * controllable(default False): if its true the synth respons to the keyboard.
   * shooting_timer_max(default 5): cuanto mayor sea, mas largo es el disparo.
   * delta_angle(default 20): Is the length in degres of the ranges of detecton,
-  where place the detected enemies, _sense_data_buffer will have a 360//delta_angle
-  length.
+  where place the detected enemies, _sense_data_buffer will have a 360.
   * _weights: contains the setteable weights for nn
 
 Main synth´s methods:
@@ -54,7 +53,7 @@ Main synth´s methods:
   * get_weights(weights) set _weights atribute.
   * get_kills(): get kills that the individual has done.
   * set_controllable(bool): sets the controllable atribute.
-  * restore_stats(), restore health and ammo to its starting points.
+  * restore_stats(): restore health and ammo to its starting points.
 
 <h1>Capturas</h1>
   
