@@ -2,17 +2,24 @@
 
 <h1>Archivos y funcionamiento</h1>
   
-* ```main.py```: Archivo principal que corre y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths<br>
+* ```main.py```: Archivo principal que corre y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths.<br>
     * ```evaluate_synth```: Función que evalua en cada ciclo, para cada individuo, según los parametros entregados, que son principalmente el rango de visión del individuo y posición, las acciones arealizar, que se incluyen más abajo en ```Main synth's methods```. 
 * ```Game```<br>
-    * ```/Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración<br>
+    * ```Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración. Entre los parametros más importantes se incluyen la lista de individuos y la función de evaluación que evalua el comportamiento en cada ciclo.<br>
+    * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos supervivientes.
 * ```Synth```<br>
     * ```Synth.py```: Clase que representa a los individuos participantes en la simulación.<br>
 * ```genetic_model```<br>
    * ```genetic_model.py```: Archivo que contiene funciones utilizables para el modelo genético de ejemplo.<br>
 * ```data.csv```: Donde se almacenan los datos del juego para futuros analisis y predicciones.<br>
+<h1>Synth</h1>
+Synth es el nombre que se le da a los individuos en la simulación y que tienen un comportamiento programable para hacer lo que sea en su contexto (Por ejemplo seguir a otros synths, disparar a un synth a cierta distancia al detectarlo o evitar a cualquier individuo al detectarlo). Todos cuentan con cualidades como vida, que al agotarse mueren o munición.<br>
+También tienen un sistema de detección basado en rangos. Si un synth está en alguno de los rangos, se actualiza la lista que contiene las distancias de los synths (obtenible con get_senseDataBuffer() ), Esta lista tiene elementos que representan distancias y tiene tantos elementos como quepan según el ángulo de detección que tenga, cuanto mayor sea el ángulo más parametros tendrá la matriz de detección, que luego se puede utilizar para tomar desiciones.<br>
 
-<h1>Parameters</h1>
+![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)
+![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/6.PNG)
+
+<h2>Parametros y atributos de la clase Synth (Todos accedibles desde la función evaluadora)</h2>
   
 Needed:<br>
   * coords((x,y) tuple).
@@ -49,5 +56,3 @@ Main synth´s methods:
   ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/2.PNG)
   ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/3.PNG)
   ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/4.PNG)
-  ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)
-  ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/6.PNG)
