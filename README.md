@@ -1,12 +1,17 @@
 <h1>Resumen</h1>
+Consiste en una simulación personalizable de un battle royale, con todo lo necesario para entrenar a los "jugadores" con algoritmos de machine learning para sobrevivir lo más posible.
+La idea principal es que se pueden crear jugadores a gusto en el mapa (que todavia no es facilmente personalizable, como para por ejemplo poner obstaculos, pero está en proceso), estos jugadores pueden moverse, ver y disparar según lo vean conveniente, el mapa se puede programar para encogerse a medida que transcurre el tiempo de juego.
+Es posible programar comportamientos de estos jugadores frente a situaciones, o entrenarlo por medio de algoritmos (Que es el foco).<br>
+La meta es entrenar a los individuos para que sean progresivamente más habiles. Y explorar algoritmos en estos jugadores para ver cuál les favorece más.
+
 
 <h1>Archivos y funcionamiento</h1>
   
 * ```main.py```: Archivo principal que corre y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths.<br>
-    * ```evaluate_synth```: Función que evalua en cada ciclo, para cada individuo, según los parametros entregados, que son principalmente el rango de visión del individuo y posición, las acciones arealizar, que se incluyen más abajo en ```Main synth's methods```. 
+    * ```evaluate_synth```: Función que evalua en cada ciclo, para cada individuo, según los parametros entregados, que son principalmente el rango de visión del individuo y posición, se evaluan las acciones a realizar, que se incluyen más abajo en ```Main synth's methods```. 
 * ```Game```<br>
     * ```Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración. Entre los parametros más importantes se incluyen la lista de individuos y la función de evaluación que evalua el comportamiento en cada ciclo.<br>
-    * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos supervivientes.
+    * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos con sus puntajes correspondientes.
 * ```Synth```<br>
     * ```Synth.py```: Clase que representa a los individuos participantes en la simulación.<br>
 * ```genetic_model```<br>
