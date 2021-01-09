@@ -11,7 +11,7 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
     * ```evaluate_synth()```: Función que evalua en cada ciclo, para cada individuo (según los parametros entregados, que son principalmente el rango de visión del individuo y posición) las acciones a realizar, que se incluyen más abajo en ```Main synth's methods```. 
 * ```Game```<br>
     * ```Game.py```: Clase que contiene los atributos y funciones del juego, renderizado y parametros globales. Cuando se llama Game.run() simula el juego y retorna la lista de individuos supervivientes en cada iteración. Entre los parametros más importantes se incluyen la lista de individuos y la función de evaluación que evalua el comportamiento en cada ciclo.<br>
-    * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos con sus puntajes correspondientes.
+      * ```run()```: Función que simula un juego, toma como parametro una función evaluadora, junto con una lista de individuos (Instancias de la clase Synth) y retorna una lista de individuos con sus puntajes correspondientes.
 * ```Synth```<br>
     * ```Synth.py```: Clase que representa a los individuos participantes en la simulación.<br>
 * ```genetic_model```<br>
