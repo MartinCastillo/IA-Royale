@@ -7,6 +7,7 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
 
 <h1>Archivos y funcionamiento</h1>
 <h3>src</h3>
+
 * ```main.py```: Archivo principal que se ejecuta y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths.<br>
     * ```evaluate_synth()```: Función que evalua en cada ciclo, para cada individuo (según los parametros entregados, que son principalmente el rango de visión del individuo y posición) las acciones a realizar, que se incluyen más abajo en ```Main synth's methods```. 
 * ```modules```<br>
@@ -26,7 +27,7 @@ También tienen un sistema de detección basado en rangos. Si un synth está en 
 ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)<br><br>
 ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/6.PNG)
 
-<h2>Parametros y atributos de la clase Synth (Todos accedibles desde la función evaluadora)</h2>
+<h3>Parametros y atributos de la clase Synth (Todos accedibles desde la función evaluadora)</h3>
   
 Needed:<br>
   * coords((x,y) tuple).
