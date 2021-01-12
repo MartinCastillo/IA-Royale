@@ -1,5 +1,5 @@
 #Contine funciones para administrar la población-synths-individuos
-from Synth.Synth import Synth
+from modules.Synth.Synth import Synth
 import numpy as np
 from random import randint,uniform
 from keras.models import Sequential
