@@ -216,8 +216,6 @@ class Synth:
         #Sheck if given two points and a circunference (centre, radius) the segment betwen the two
         #points intercects the circunference, and if it does return the pint in the circunference
         #that colide, otherwise instead of a point retuns None
-        #https://codereview.stackexchange.com/questions/86421/line-segment-to-circle-collision-algorithm
-        #https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line#Vector_formulation
         V = P2-P1
         a = V.dot(V)
         b = 2 * V.dot(P1 - Q)
