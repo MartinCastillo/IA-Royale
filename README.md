@@ -6,7 +6,7 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
 
 
 <h1>Archivos y funcionamiento</h1>
-  
+<h3>src</h3>
 * ```main.py```: Archivo principal que se ejecuta y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths.<br>
     * ```evaluate_synth()```: Función que evalua en cada ciclo, para cada individuo (según los parametros entregados, que son principalmente el rango de visión del individuo y posición) las acciones a realizar, que se incluyen más abajo en ```Main synth's methods```. 
 * ```modules```<br>
@@ -20,7 +20,7 @@ La meta es entrenar a los individuos para que sean progresivamente más habiles.
 * ```data.csv```: Donde se almacenan los datos del juego para futuros analisis y predicciones.<br>
 <h1>Synth</h1>
 Synth es el nombre que se le da a los individuos en la simulación y que tienen un comportamiento programable para hacer lo que sea en su contexto (Por ejemplo seguir a otros synths, disparar a un synth a cierta distancia al detectarlo o evitar a cualquier individuo al detectarlo). Todos cuentan con cualidades como vida, que al agotarse mueren o munición.<br>
-<h2>Sistema de detección</h2>
+<h3>Sistema de detección</h3>
 También tienen un sistema de detección basado en rangos. Si un synth está en alguno de los rangos, se actualiza la lista que contiene las distancias de los synths (obtenible con get_senseDataBuffer() ), Esta lista tiene elementos que representan distancias y tiene tantos elementos como quepan según el ángulo de detección que tenga, cuanto mayor sea el ángulo más parametros tendrá la matriz de detección, que luego se puede utilizar para tomar desiciones.<br><br>
 
 ![img](https://github.com/MartinCastillo/IA-Royale/blob/master/captures/5.PNG)<br><br>
