@@ -5,7 +5,7 @@ Es posible programar el comportamiento de estos jugadores frente a situaciones, 
 La meta es entrenar a los individuos para que sean progresivamente más habiles. Y explorar algoritmos en estos jugadores para ver cuales les favorecen más.
 
 
-<h1>Archivos y funcionamiento</h1>
+<h1>Archivos</h1>
 <h3>src</h3>
 
 * ```main.py```: Archivo principal que se ejecuta y en la que importando las clases Game y Synth se pueden implementar los algoritmos que se deseen para entrenar el comportamiento de los Syths.<br>
