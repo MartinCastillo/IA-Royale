@@ -130,7 +130,8 @@ class Game:
         """
         --------------------------------------------------------------------------------
         Takes a list of synths and a behavioral_function and runs the game, return the
-        winer-winers or survivor-survivors.
+        winer-winers or survivor-survivors, and a bolean that indicate if the program
+        clossed normally.
         -Needed:
         °synths = Synth object list.
         °behavioral_function = Actions that each synth do every cycle(e.g the ia) when
@@ -144,7 +145,6 @@ class Game:
             self.render = render
         starting_population_size = len(synths)
         if(self.render):
-            pygame.display.set_icon(pygame.image.load("icon.jpg"))
             window = pygame.display.set_mode(self._map_size)
             pygame.display.set_caption("IA-Royale")
             pygame.time.Clock()

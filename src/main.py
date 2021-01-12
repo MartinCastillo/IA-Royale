@@ -71,9 +71,6 @@ def evaluate_synth(synth):
 if(__name__=='__main__'):
     """Genera población"""
     population = generate_population(population_size,starting_map_size,**synth_stats)
-    game = Game(ammo_reward=8, population_reduction_fraction=population_reduction_fraction,
-        area_reduction_delay=2,prompt_messages=False, starting_map_size=starting_map_size,
-        render_text=False,render_synth_details=False)
     for _ in range(iters):
         render = True
         #Te falta hacer un parametro de temporizador, el tiempo máximo de juego
